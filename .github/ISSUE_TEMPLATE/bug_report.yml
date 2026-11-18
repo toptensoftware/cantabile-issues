@@ -1,6 +1,5 @@
 name: Bug report
 description: Report a problem in Cantabile
-title: ""
 labels: [bug, needs-triage]
 body:
   - type: markdown
