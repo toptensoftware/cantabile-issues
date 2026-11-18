@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and help
+    url: https://community.cantabilesoftware.com
+    about: Ask how-to and setup questions on the Cantabile Community forum.
+  - name: Feature requests and suggestions
+    url: https://www.cantabilesoftware.com/contact
+    about: Email contact@cantabilesoftware.com or post on the forum.
+  - name: Check and vote on feature requests
+    url: https://www.cantabilesoftware.com/trello
+    about: See what's already been requested on Trello.
+  - name: Email support
+    url: https://www.cantabilesoftware.com/contact
+    about: Licensing, accounts, security problems, or a bug report if you don't want a GitHub account.
+  - name: Diagnostics and troubleshooting
+    url: https://www.cantabilesoftware.com/support/debug
+    about: Finding your log files and settings folder, and what to do about crashes and hangs.

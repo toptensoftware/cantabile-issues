@@ -1,0 +1,112 @@
+name: Bug report
+description: Report a problem in Cantabile
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! This form is **only for bugs**: please ask questions on the [Community forum](https://community.cantabilesoftware.com), and send feature requests by email or on the forum.
+
+        Everything you post here, including attached files, is **public**. Please read [the README](https://github.com/toptensoftware/cantabile-issues#your-files-are-public) before attaching files.
+
+        **Crashes:** you don't need to report a crash here. Press **Send** in Cantabile's crash report window and it reaches us automatically. Only open an issue for a crash you can make happen again.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I've searched the existing issues (open and closed)
+          required: true
+        - label: This is a bug, not a support question or feature request
+          required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build number
+      description: "From Help → About... (e.g. *Version 4.0 Build 4400*: enter 4400)"
+      placeholder: "4400"
+    validations:
+      required: true
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - Lite
+        - Solo
+        - Performer
+    validations:
+      required: true
+  - type: dropdown
+    id: windows
+    attributes:
+      label: Windows version
+      description: "Windows Settings → System → About. If Other, say which in the steps below."
+      options:
+        - Windows 11
+        - Windows 10
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: driver
+    attributes:
+      label: Audio driver
+      description: Tools → Options → Audio Engine
+      options:
+        - ASIO
+        - WASAPI
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Audio interface / driver name
+      description: As shown in Tools → Options → Audio Engine
+      placeholder: "ASIO - Focusrite USB ASIO"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, step by step, so we can make it happen too.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      description: Include any error messages. You can drag screenshots or a short video into this box.
+    validations:
+      required: true
+  - type: textarea
+    id: plugins
+    attributes:
+      label: Plugins involved
+      description: Name, maker and version of any plugins involved.
+  - type: upload
+    id: logs
+    attributes:
+      label: Log files
+      description: "log.txt and log-previous.txt from Tools → Open Settings Folder. Check them first: they're public."
+    validations:
+      required: false
+      accept: ".txt,.log,.zip"
+  - type: upload
+    id: files
+    attributes:
+      label: Song / rack files, screenshots or video
+      description: "Zip a song with its racks. Don't attach plugins or sample libraries."
+    validations:
+      required: false
