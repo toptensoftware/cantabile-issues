@@ -19,6 +19,8 @@ body:
           required: true
         - label: This is a bug, not a support question or feature request
           required: true
+        - label: I understand that everything I post here is public and can't be easily retracted
+          required: true
   - type: input
     id: build
     attributes:
